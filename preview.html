@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Popup</title>
+    <style>
+       
+        body{
+            background: rgb(194,159,255);
+background: linear-gradient(149deg, rgba(194,159,255,1) 35%, rgba(116,180,103,1) 71%);
+background-repeat: no-repeat;
+height: 100vh;
+overflow-y: hidden;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+        .button {
+            display: flex;
+            padding: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>อยากติด JWC13 สาขา Programming</h1>
+    </div>
+    <div class="button">
+        <button id="myButton">Click Me!</button>
+    </div>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            const randomNumber = Math.random();
+            const threshold = 0.011019;
+            if (randomNumber < threshold) {
+                alert('yes');
+                
+            } else {
+                alert('no');
+            }
+        });
+    </script>
+</body>
+</html>
